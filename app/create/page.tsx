@@ -45,7 +45,7 @@ const page: React.FC = () => {
     const provider = useEthersProvider();
     const signer = useEthersSigner();
 
-    const chainId = useChainId();
+    const chainId = 93384;
 
     const [createCollection, { loading, error }] = useMutation(CREATE_COLLECTION, {
         update(cache, { data: { createCollection } }) {
@@ -267,7 +267,7 @@ const page: React.FC = () => {
                     </div>
 
                     <FormInput
-                        label="Price (MON)"
+                        label="Price (TEA)"
                         type="number"
                         id="price"
                         value={formData.price}

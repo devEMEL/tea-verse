@@ -36,12 +36,12 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link
+                                {/* <Link
                                     href="/faucet"
                                     className="text-zinc-400 hover:text-white transition-colors"
                                 >
                                     Faucet
-                                </Link>
+                                </Link> */}
                             </li>
                         </ul>
                     </div>
