@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NFTCard from './NFTCard';
 
 interface NFT {
@@ -20,6 +20,9 @@ interface MyNFTsProps {
 }
 
 const MyNFTs: React.FC<MyNFTsProps> = ({ title, NFTs }) => {
+    useEffect(() => {
+        console.log(NFTs);
+    }, [])
     return (
         <div className="container mx-auto px-4 py-8">
             <h1 className="text-2xl font-bold mb-8">{title}</h1>

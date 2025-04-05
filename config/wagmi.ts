@@ -2,9 +2,9 @@ import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import { http } from 'wagmi';
 import type { Chain } from 'viem';
 
-const tea_Assam = {
-    id: 93384,
-    name: 'tea-assam',
+const tea_Sepolia = {
+    id: 10218,
+    name: 'tea-sepolia',
     nativeCurrency: {
         decimals: 18,
         name: 'Tea',
@@ -12,16 +12,16 @@ const tea_Assam = {
     },
     rpcUrls: {
         public: {
-            http: ['https://assam-rpc.tea.xyz'],
+            http: ['https://tea-sepolia.g.alchemy.com/public'],
         },
         default: {
-            http: ['https://assam-rpc.tea.xyz'],
+            http: ['https://tea-sepolia.g.alchemy.com/public'],
         },
     },
     blockExplorers: {
         default: {
-            name: 'tea-assam',
-            url: 'https://assam.tea.xyz',
+            name: 'tea-sepolia',
+            url: 'https://sepolia.tea.xyz',
         },
     },
 
@@ -30,12 +30,12 @@ const tea_Assam = {
 
 
 export const wagmiConfig = getDefaultConfig({
-    appName: 'tea-assam',
+    appName: 'tea-sepolia',
     projectId: 'cdddc2c45ee7a243f73916dfe293c0ca',
     chains: [
-        tea_Assam,
+        tea_Sepolia,
     ],
     transports: {
-        [tea_Assam.id]: http(),
+        [tea_Sepolia.id]: http(),
     },
 });

@@ -9,7 +9,7 @@ import { useChainId } from 'wagmi';
 
 const CollectionsPage = () => {
 
-    const chainId = 93384;
+    const chainId = 10218;
     const [activeSort, setActiveSort] = useState('createdAt');
     const [orderDirection, setOrderDirection] = useState('desc');
     const { loading, data, error, refetch } = useQuery(GET_COLLECTIONS, { 
